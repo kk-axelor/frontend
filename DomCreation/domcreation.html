@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        
+
+    }
+
+    .container .left {
+        width: 300px;
+    }
+
+    .container .right {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    .container .right  input{
+        padding: 2px;
+        border: none;
+        border-radius: 3px;
+        border: 1px solid black;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .container .right input:focus{
+        outline: none;
+    }
+
+    .container .right button
+    {
+
+        width: fit-content;
+        padding: 5px 20px;
+        font-size: 20px;
+        background-color: blue;
+        border: none;
+        color: white;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <ol class="orderlist"></ol>
+        </div>
+        <div class="right">
+            <input type="text" name="name" placeholder="Name of movie">
+            <input type="text" name="img" placeholder="Image Link">
+            <button class="btn" onclick="addMore()">Add</button>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
